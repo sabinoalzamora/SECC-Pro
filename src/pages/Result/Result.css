@@ -1,0 +1,168 @@
+.verdict-card {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.verdict-card small,
+.result-grid small,
+.stop-card small,
+.diagnostic-grid small,
+.explanation-card small,
+.warnings-card small {
+  display: block;
+  color: var(--dim);
+  font-size: .68rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 950;
+  margin-bottom: 6px;
+}
+
+.verdict-card h2 {
+  margin: 0 0 6px;
+  font-size: 1.55rem;
+  line-height: 1.05;
+}
+
+.verdict-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.verdict-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+}
+
+.verdict-card.go .verdict-icon,
+.verdict-card.go h2 {
+  color: var(--green);
+}
+
+.verdict-card.rebuild .verdict-icon,
+.verdict-card.rebuild h2,
+.verdict-card.risk .verdict-icon,
+.verdict-card.risk h2 {
+  color: var(--amber);
+}
+
+.verdict-card.wait .verdict-icon,
+.verdict-card.wait h2 {
+  color: var(--red);
+}
+
+.verdict-card.info .verdict-icon,
+.verdict-card.info h2 {
+  color: var(--cyan);
+}
+
+.confidence-card {
+  margin-bottom: 14px;
+}
+
+.confidence-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.confidence-top strong {
+  color: var(--cyan);
+  font-size: 1.25rem;
+}
+
+.confidence-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.07);
+  overflow: hidden;
+}
+
+.confidence-track div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--cyan), var(--green));
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.result-grid .card strong,
+.stop-card strong {
+  display: block;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.stop-card {
+  margin-bottom: 14px;
+}
+
+.diagnostic-grid {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.diagnostic-grid > div {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.diagnostic-grid > div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.diagnostic-grid strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.diagnostic-grid span {
+  color: var(--cyan);
+  font-weight: 900;
+  font-size: .78rem;
+}
+
+.explanation-card,
+.warnings-card {
+  margin-bottom: 14px;
+}
+
+.explanation-card ul,
+.warnings-card ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.warnings-card {
+  border-color: rgba(255, 179, 0, .25);
+}
+
+.warnings-card small {
+  color: var(--amber);
+}
+
+.navigation-row .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}

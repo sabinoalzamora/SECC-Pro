@@ -1,0 +1,1 @@
+.step-progress{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:18px}.step{min-width:0;height:5px;border-radius:999px;background:rgba(255,255,255,.07);position:relative}.step.active{background:linear-gradient(90deg,var(--cyan),var(--green))}.step span,.step small{display:none}

@@ -1,0 +1,27 @@
+{
+  "name": "secc-pro",
+  "version": "0.6.1-alpha",
+  "private": true,
+  "description": "SECC Pro - Sistema Experto de Cunitas y Carpitas",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "typescript": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "vitest": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest"
+  }
+}

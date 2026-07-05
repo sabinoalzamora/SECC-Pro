@@ -1,0 +1,15 @@
+.hourly-page {
+  padding-bottom: 22px;
+}
+
+.hourly-summary {
+  color: var(--muted);
+  line-height: 1.5;
+  margin: -8px 0 16px;
+}
+
+.hourly-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}

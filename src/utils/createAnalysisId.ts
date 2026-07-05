@@ -1,0 +1,1 @@
+export function createAnalysisId(){const now=new Date();const stamp=now.toISOString().slice(0,10).replaceAll('-','');const random=Math.floor(Math.random()*10000).toString().padStart(4,'0');return `SECC-${stamp}-${random}`;}
