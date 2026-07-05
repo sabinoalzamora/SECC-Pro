@@ -1,6 +1,7 @@
 {
   "name": "secc-pro",
   "version": "0.6.1-alpha",
+  "packageManager": "npm@10.9.2",
   "private": true,
   "description": "SECC Pro - Sistema Experto de Cunitas y Carpitas",
   "type": "module",
